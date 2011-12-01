@@ -8,9 +8,11 @@ Consuming these services using jQuery
 
 Set Up:
 
-1. Create a MySQL database name "cellar"
+1. Create a MySQL database name "cellar".
 2. Execute cellar.sql to create and populate the "wine" table:
 
 	mysql cellar -uroot < cellar.sql
 
 3. Import the Dynamic Web Project in Eclipse.
+4. Locate cellar.properties and make sure the JDBC connection string matches your database configuration
+5. Run the project.
