@@ -6,8 +6,8 @@
 	<servlet-name>Jersey</servlet-name>
 	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 	<init-param>
-		<param-name>com.sun.jersey.config.property.packages</param-name>
-		<param-value>org.coenraets</param-value>
+  		<param-name>com.sun.jersey.config.property.packages</param-name>
+		<param-value>org.coenraets;org.codehaus.jackson.jaxrs</param-value>
 	</init-param>
 	<load-on-startup>1</load-on-startup>
 </servlet>

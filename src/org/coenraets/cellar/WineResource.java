@@ -42,6 +42,7 @@ public class WineResource {
 	@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 	@Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
 	public Wine create(Wine wine) {
+		System.out.println("creating wine");
 		return dao.create(wine);
 	}
 

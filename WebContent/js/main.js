@@ -152,7 +152,7 @@ function deleteWine() {
 
 function renderList(data) {
 	// JAX-RS serializes an empty list as null, and a 'collection of one' as an object (not an 'array of one')
-	var list = data == null ? [] : (data.wine instanceof Array ? data.wine : [data.wine]);
+	var list = data == null ? [] : (data instanceof Array ? data : [data]);
 
 	$('#wineList li').remove();
 	$.each(list, function(index, wine) {
@@ -173,8 +173,9 @@ function renderDetails(wine) {
 
 // Helper function to serialize all the form fields into a JSON string
 function formToJSON() {
+	var wineId = $('#wineId').val();
 	return JSON.stringify({
-		"id": $('#wineId').val(), 
+		"id": wineId == "" ? null : wineId, 
 		"name": $('#name').val(), 
 		"grapes": $('#grapes').val(),
 		"country": $('#country').val(),
