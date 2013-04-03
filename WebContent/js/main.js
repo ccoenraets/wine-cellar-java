@@ -1,4 +1,5 @@
 // The root URL for the RESTful services
+// updated 'rootURL' to a relative path
 var rootURL = "/rest/wines";
 
 var currentWine;
