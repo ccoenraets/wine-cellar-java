@@ -6,7 +6,7 @@ This application provides an example of
 Building a complete RESTful API in Java using JAX-RS and Jersey.
 Consuming these services using jQuery
 
-Set Up: d
+Set Up: e
 
 1. Create a MySQL database name "cellar".
 2. Execute cellar.sql to create and populate the "wine" table:
